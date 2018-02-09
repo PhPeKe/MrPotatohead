@@ -112,6 +112,16 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
 
+            case "eyes":
+                ImageView image9 = findViewById(R.id.eyes);
+                if (checkbox.isChecked()) {
+                    image9.setVisibility(View.VISIBLE);
+                }
+                else {
+                    image9.setVisibility(View.INVISIBLE);
+                }
+                break;
+
         }
 
     }
