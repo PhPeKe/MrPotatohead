@@ -167,6 +167,7 @@
         android:layout_height="33dp"
         android:layout_marginStart="42dp"
         android:layout_marginTop="17dp"
+        android:onClick="checkClicked"
         android:text="arms"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/body" />
@@ -176,8 +177,8 @@
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_marginStart="42dp"
+        android:onClick="checkClicked"
         android:text="ears"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
@@ -186,35 +187,38 @@
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_marginStart="42dp"
+        android:onClick="checkClicked"
         android:text="eyebrows"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
 
     <CheckBox
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="1dp"
         android:layout_marginStart="42dp"
+        android:onClick="checkClicked"
         android:text="eyes"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox6"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
 
     <CheckBox
         android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
-        android:layout_marginBottom="16dp"
         android:layout_marginStart="42dp"
+        android:layout_marginTop="1dp"
+        android:onClick="checkClicked"
         android:text="glasses"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
 
     <CheckBox
         android:id="@+id/checkBox8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="84dp"
+        android:onClick="checkClicked"
         android:text="hat"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
@@ -224,18 +228,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="64dp"
+        android:onClick="checkClicked"
         android:text="mouth"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="398dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
 
     <CheckBox
         android:id="@+id/checkBox10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="42dp"
+        android:onClick="checkClicked"
         android:text="mustache"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="366dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox11" />
 
     <CheckBox
         android:id="@+id/checkBox11"
@@ -243,6 +249,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="74dp"
         android:layout_marginTop="18dp"
+        android:onClick="checkClicked"
         android:text="nose"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/body" />
@@ -251,10 +258,9 @@
         android:id="@+id/checkBox12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="17dp"
         android:layout_marginEnd="68dp"
+        android:onClick="checkClicked"
         android:text="shoes"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
 
