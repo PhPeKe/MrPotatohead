@@ -26,16 +26,6 @@ public class MainActivity extends AppCompatActivity {
         ImageView image9 = findViewById(R.id.eyes);
 
         setContentView(R.layout.activity_main);
-        //image.setVisibility(savedInstanceState.getInt("image"));
-        //image2.setVisibility(savedInstanceState.getInt("image2"));
-        //image2.setVisibility(savedInstanceState.getInt("image3"));
-        //image2.setVisibility(savedInstanceState.getInt("image4"));
-        //image2.setVisibility(savedInstanceState.getInt("image5"));
-        //image2.setVisibility(savedInstanceState.getInt("image6"));
-        //image2.setVisibility(savedInstanceState.getInt("image7"));
-        //image2.setVisibility(savedInstanceState.getInt("image8"));
-        //image2.setVisibility(savedInstanceState.getInt("image9"));
-        //image2.setVisibility(savedInstanceState.getInt("image10"));
 
     }
 
@@ -184,4 +174,34 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt("image10", image10.getVisibility());
 
     }
+
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+
+        ImageView image = findViewById(R.id.arms);
+        ImageView image2 = findViewById(R.id.hat);
+        ImageView image3 = findViewById(R.id.glasses);
+        ImageView image4 = findViewById(R.id.mustache);
+        ImageView image5 = findViewById(R.id.shoes);
+        ImageView image10 = findViewById(R.id.ears);
+        ImageView image6 = findViewById(R.id.nose);
+        ImageView image7 = findViewById(R.id.mouth);
+        ImageView image8 = findViewById(R.id.eyebrows);
+        ImageView image9 = findViewById(R.id.eyes);
+
+        image.setVisibility(savedInstanceState.getInt("image"));
+        image2.setVisibility(savedInstanceState.getInt("image2"));
+        image3.setVisibility(savedInstanceState.getInt("image3"));
+        image4.setVisibility(savedInstanceState.getInt("image4"));
+        image5.setVisibility(savedInstanceState.getInt("image5"));
+        image6.setVisibility(savedInstanceState.getInt("image6"));
+        image7.setVisibility(savedInstanceState.getInt("image7"));
+        image8.setVisibility(savedInstanceState.getInt("image8"));
+        image9.setVisibility(savedInstanceState.getInt("image9"));
+        image10.setVisibility(savedInstanceState.getInt("image10"));
+
+        int myInt = savedInstanceState.getInt("MyInt");
+    }
+
 }
