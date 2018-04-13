@@ -13,18 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        ImageView image = findViewById(R.id.arms);
-        ImageView image2 = findViewById(R.id.hat);
-        ImageView image3 = findViewById(R.id.glasses);
-        ImageView image4 = findViewById(R.id.mustache);
-        ImageView image5 = findViewById(R.id.shoes);
-        ImageView image10 = findViewById(R.id.ears);
-        ImageView image6 = findViewById(R.id.nose);
-        ImageView image7 = findViewById(R.id.mouth);
-        ImageView image8 = findViewById(R.id.eyebrows);
-        ImageView image9 = findViewById(R.id.eyes);
-
+        
         setContentView(R.layout.activity_main);
 
     }
